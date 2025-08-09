@@ -8,9 +8,9 @@
 ***
 
 ## 1 Introduction  
-Time $$t$$ enters Newtonian dynamics, special relativity, and the Schrödinger equation as a primitive coordinate. Yet reparametrisation invariance in classical mechanics and general relativity, together with relational quantum dynamics, imply that **coordinate time is a gauge choice**. Quantum gravity sharpens this “problem of time” when canonical quantisation yields the timeless constraint
+Time $$t$$ enters Newtonian dynamics, special relativity, and the Schrödinger equation as a primitive coordinate. Yet reparametrisation invariance in classical mechanics and general relativity, together with relational quantum dynamics, imply that **coordinate time is a gauge choice**. Quantum gravity sharpens this “problem of time” when canonical quantisation yields the timeless constraint  
 $$
-\hat{\mathcal H}\,\Psi=0.
+\hat{\mathcal{H}}\,\Psi = 0.
 $$
 Previous proposals recover time by:
 
@@ -25,105 +25,138 @@ All succeed in idealised settings but break down once decoherence, chaos, or fin
 ## 2 Timeless Frameworks Revisited – Detailed Derivations  
 
 ### 2.1 Statistical Jacobi Mechanics  
-We formulate the Jacobi–Maupertuis functional
+We formulate the Jacobi–Maupertuis functional  
 $$
-E.2.1\quad S_J[q(\lambda)] 
-= \int_{\lambda_0}^{\lambda_1}\!\sqrt{2(E-V(q))}\,\sqrt{g_{ij}\,\dot q^i\dot q^j}\,d\lambda,
+\mathrm{E}.2.1\quad
+S_J[q(\lambda)]
+=\int_{\lambda_0}^{\lambda_1}\!\sqrt{2\bigl(E - V(q)\bigr)}\,\sqrt{g_{ij}\,\dot q^i\dot q^j}\,d\lambda,
 $$
-derive the energy constraint $$g^{ij}p_i p_j=2(E-V)$$, then define the statistical clock via the ensemble average arc-length,
+derive the energy constraint  
 $$
-E.2.4\quad dt := \frac{\langle d\ell\rangle}{\sqrt{2\langle E-V\rangle}},
+g^{ij}p_i p_j =2\bigl(E - V(q)\bigr),
+$$
+then define the statistical clock via the ensemble average arc-length  
+$$
+\mathrm{E}.2.4\quad
+dt := \frac{\langle d\ell\rangle}{\sqrt{2\,\langle E - V\rangle}},
 $$
 ensuring smooth time even under chaotic dynamics.
 
-### 2.2 Decoherence‐Assisted Wheeler–DeWitt  
-Starting from the ADM Hamiltonian
+### 2.2 Decoherence-Assisted Wheeler–DeWitt  
+Starting from the ADM Hamiltonian  
 $$
-H_{\rm tot}=\int d^3x\,(N\mathcal H_\perp+N^a\mathcal H_a),
+H_{\rm tot}
+=\int d^3x\,(N\mathcal H_\perp+N^a\mathcal H_a),
 $$
-we quantise to obtain
+we quantise to obtain  
 $$
-E.2.13\quad \widehat{\mathcal H}_\perp\Psi=0,\quad \widehat{\mathcal H}_a\Psi=0.
+\mathrm{E}.2.13\quad
+\widehat{\mathcal H}_\perp\,\Psi=0,\quad
+\widehat{\mathcal H}_a\,\Psi=0.
 $$
-Embedding $$\Psi$$ into a decoherence functional
+Embedding $$\Psi$$ into a decoherence functional  
 $$
-E.2.15\quad \mathcal D[h^+,h^-]=\mathrm{Tr}_{\rm env}[\rho_0\,U[h^+]\,U^\dagger[h^-]]
+\mathrm{E}.2.15\quad
+\mathcal D[h^+,h^-]
+=\mathrm{Tr}_{\rm env}\bigl[\rho_0\,U[h^+]\,U^\dagger[h^-]\bigr]
 $$
-yields a Lindblad master equation after tracing inhomogeneous modes, with decoherence rate $$\Gamma\sim E^2/\kappa$$.
+yields a Lindblad master equation after tracing inhomogeneous modes, with decoherence rate  
+$$
+\Gamma\sim\frac{E^2}{\kappa}.
+$$
 
 ### 2.3 Relational Dynamics with Finite Clocks  
-On $$\mathcal H_C\otimes\mathcal H_S$$ impose
+On $$\mathcal{H}_C\otimes\mathcal{H}_S$$ impose  
 $$
-E.2.22\quad(\hat H_C+\hat H_S)\,|\Psi\rangle=0.
+\mathrm{E}.2.22\quad
+(\hat H_C+\hat H_S)\,|\Psi\rangle=0.
 $$
-Clock decoherence by
+Clock decoherence by  
 $$
-\mathcal L_C[\rho]=-\,\gamma\,[\hat H_C,[\hat H_C,\rho]]
+\mathcal L_C[\rho]
+=-\gamma\,[\hat H_C,[\hat H_C,\rho]]
 $$
-leads to the conditional evolution
+leads to the conditional evolution  
 $$
-E.2.25\quad\frac{d}{dt}\rho_S = -\tfrac{i}{\hbar}[H_S,\rho_S]-\gamma\,\rho_S+\cdots.
+\mathrm{E}.2.25\quad
+\frac{d}{dt}\rho_S(t)
+=-\frac{i}{\hbar}[H_S,\rho_S]
+-\gamma\,\rho_S
++\mathcal O(\gamma^2).
 $$
 
 ***
 
-## 3 Arrow of Time from Low‐Entanglement Initial Conditions  
-Assuming an initial product factorisation with minimal entanglement,
+## 3 Arrow of Time from Low-Entanglement Initial Conditions  
+Assuming an initial product factorisation with minimal entanglement  
 $$
-E.3.2\quad S_{\rm ent}(0)\ll1,
+\mathrm{E}.3.2\quad
+S_{\rm ent}(0)=\sum_{i\in\text{bipartitions}}S[\rho_i]\ll1,
 $$
-unitary dynamics guarantee $$\dot S_{\rm ent}\ge0$$ [mixing theorem], furnishing a natural arrow aligned with any emergent time.
+unitary dynamics guarantee  
+$$
+\mathrm{E}.3.4\quad
+\frac{d}{dt}S_{\rm ent}(t)\ge0,
+\quad S_{\rm ent}(t)=0\iff t=0,
+$$
+furnishing a natural arrow aligned with any emergent time.
 
 ***
 
 ## 4 Empirical Windows  
-Gravitational spectral density
+Gravitational spectral density  
 $$
-E.4.1\quad J_{\rm grav}(\omega)=\frac{\kappa\,\omega^3}{2\pi^2}\coth\!\bigl(\tfrac{\hbar\omega}{2k_BT}\bigr)
+\mathrm{E}.4.1\quad
+J_{\rm grav}(\omega)
+=\frac{\kappa\,\omega^3}{2\pi^2}
+\coth\!\bigl(\tfrac{\hbar\omega}{2k_BT_{\rm grav}}\bigr)
 $$
-yields
+yields  
 $$
-\gamma=\frac{\kappa}{\hbar^2}\int_0^\Omega\frac{J_{\rm grav}(\omega)}{\omega^2}d\omega,
+\gamma
+=\frac{\kappa}{\hbar^2}
+\int_{0}^{\Omega}
+\frac{J_{\rm grav}(\omega)}{\omega^2}\,d\omega,
 $$
-predicting $$\gamma\lesssim10^{-43}\,\rm GeV$$ for realistic tabletop parameters.
+predicting $$\gamma\lesssim10^{-43}\,\mathrm{GeV}$$ for realistic tabletop parameters.
 
 ***
 
 ## 5 Discussion  
-- **Time‐independence** preserved at the fundamental level.  
+- **Time-independence** preserved at the fundamental level.  
 - **Emergent clocks** arise only on decohered branches.  
-- **Arrow of time** derives from low‐entanglement boundary conditions.  
+- **Arrow of time** derives from low-entanglement boundary conditions.  
 - **Laboratory tests** possible via mesoscopic clocks, interferometers, and CMB trispectra.
 
 ***
 
 ## 6 Conclusion  
-Combining statistical Jacobi clocks, decoherence‐assisted WKB branches, and finite‐resource relational clocks with the Entanglement Past Hypothesis yields a fully timeless yet empirically grounded picture of time and its arrow.
+Combining statistical Jacobi clocks, decoherence-assisted WKB branches, and finite-resource relational clocks with the Entanglement Past Hypothesis yields a fully timeless yet empirically grounded picture of time and its arrow.
 
 ***
 
 ## Appendices  
 
 ### Appendix A Deriving Wheeler–DeWitt from the Einstein–Hilbert Action  
-A.1 ADM decomposition of the metric, lapse and shift.  
-A.2 Legendre transform of the Einstein–Hilbert action.  
-A.3 Explicit form of $$\mathcal H_\perp$$ and $$\mathcal H_a$$.  
-A.4 Operator ordering and factor‐ordering ambiguities in $$\widehat{\mathcal H}_\perp$$.
+**A.1** ADM decomposition of the metric, lapse and shift.  
+**A.2** Legendre transform of the Einstein–Hilbert action.  
+**A.3** Explicit form of $$\mathcal H_\perp$$ and $$\mathcal H_a$$.  
+**A.4** Operator ordering and factor-ordering ambiguities in $$\widehat{\mathcal H}_\perp$$.
 
 ### Appendix B Path Integral Representation & Decoherence Functional  
-B.1 Influence functional derivation for inhomogeneous gravitational modes.  
-B.2 Gaussian approximation and heat‐kernel regularisation.  
-B.3 Master‐equation derivation leading to (E.2.17).
+**B.1** Influence functional derivation for inhomogeneous gravitational modes.  
+**B.2** Gaussian approximation and heat-kernel regularisation.  
+**B.3** Master-equation derivation leading to (E.2.17).
 
 ### Appendix C Resource Theory of Temporal Reference Frames  
-C.1 Clock‐environment model and U(1) covariance.  
-C.2 Shared‐asymmetry measure and relative entropy of entanglement.  
-C.3 Proof that finite energy spread yields Lindblad generator $$\mathcal L_C$$.
+**C.1** Clock-environment model and U(1) covariance.  
+**C.2** Shared-asymmetry measure and relative entropy of entanglement.  
+**C.3** Proof that finite energy spread yields Lindblad generator $$\mathcal L_C$$.
 
 ### Appendix D Entropy Production Theorems  
-D.1 Mixing theorem for generic unitary interactions.  
-D.2 Rigorous proof $$\dot S_{\rm ent}\ge0$$ given low‐entanglement initial data.  
-D.3 Conditions for strict monotonicity and exceptions.
+**D.1** Mixing theorem for generic unitary interactions.  
+**D.2** Rigorous proof $$\dot S_{\rm ent}\ge0$$ given low-entanglement initial data.  
+**D.3** Conditions for strict monotonicity and exceptions.
 
 ***
 
